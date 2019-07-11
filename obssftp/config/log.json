@@ -1,0 +1,11 @@
+{
+	"logpath":"/var/log/obssftp/obssftp.log",
+	"level": "INFO",
+	"logrotate_num": "20",
+	"logrotate_size":"100M",
+	"auditlogpath": "/var/log/obssftp/obssftp_audit.csv",
+	"auditlog_obs_endpoint":"",
+	"auditlog_obs_bucket":"",
+	"auditlog_obs_ak":"",
+	"auditlog_obs_sk":""
+}

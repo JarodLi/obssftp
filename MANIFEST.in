@@ -1,0 +1,4 @@
+include obssftp/config/*
+include README.md
+include NOTICE
+prune unittest

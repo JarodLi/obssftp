@@ -1,0 +1,26 @@
+[Unit]
+Description=obssftp service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+
+ExecStart=/usr/bin/obssftp start
+ExecStopPost=/usr/bin/rm -f /usr/local/etc/obssftp/obssftp.pid
+
+Restart=always
+StartLimitInterval=10s
+StartLimitBurst=10
+RestartSec=3s
+
+StandardOutput=null
+StandardError=null
+CPUAccounting=true
+CPUQuota=80%
+MemoryAccounting=true
+MemoryLimit=10000M
+
+[Install]
+WantedBy=multi-user.target
