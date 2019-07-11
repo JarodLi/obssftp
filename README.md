@@ -1,0 +1,2 @@
+# obssftp
+SFTP ON HUAWEI OBS
